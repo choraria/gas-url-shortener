@@ -150,7 +150,9 @@ The script within the `Code.gs` file checks for a few kinds of validations withi
 
 # Contributing
 
-Please feel free to create pull requests with your recommendations or write to me on `code@script.gs`
+I'm new here, this is my first open-source project & I'm not actually a coder/techie or a programmer - just super enthusiastic about Google Apps Script with a huge self-centered need to brag.
+
+If you've read through this documentation so far - I know, this is such a cliché thing to say - and want to contribute, please feel free to create pull requests with your recommendations or write to me on `code@script.gs`.
 
 # Credits
 
