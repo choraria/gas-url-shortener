@@ -34,6 +34,13 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
 
 # Table of Contents
 
+- [TakeMeThere](#takemethere)
+  - [Demo](#demo)
+  - [Caveat(s)](#caveats)
+    - [Redirects](#redirects)
+    - [404s](#404s)
+    - [Analytics](#analytics)
+
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [Google Sheets & Script stage](#google-sheets--script-stage)
