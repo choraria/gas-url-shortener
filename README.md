@@ -8,13 +8,17 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 - A Spreadsheet that acts as the [datasource](https://docs.google.com/spreadsheets/d/1xPs4Ht-3PVBGgdNSxyN3p2F5TtOifgvunrEvYaiu_A4/edit?usp=sharing)
 - Finally, [the script](https://script.google.com/d/1wdNu632PfJNv0iCCNLjA-9nARemz7DLcK28Lio6YdVNMP3iEtOUtR4_R/edit?usp=sharing) itself
 
-## Caveat
+## Caveat(s)
 
 With the current architecture, while "redirecting" from the short URL to the destination (long) URL, the Apps Script web app link is exposed and visible. Here's what I mean -
 
 ![tmt-caveat](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-caveat.gif)
 
-This may be a deal-breaker for a few and so I'd rather you know about this **before** you're exposed to this excruciating documentation.
+For now, the 404s are more of an "alert" box, that's the redirected to the main domain.
+
+![tmt-404](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-404.gif)
+
+These may be deal-breakers for a few and so I'd rather you know about them **before** you're exposed to the excruciating documentation 😅
 
 # Table of Contents
 
