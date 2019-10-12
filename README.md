@@ -32,7 +32,7 @@ Yeah, I know this may sound super annoying but *that*, something that most folks
 
 ### Google login
 
-[[Investigating](https://stackoverflow.com/questions/58358716/web-app-asking-user-to-login-even-though-its-been-deployed-to-be-used-by-anyon)] I got to know about this *odd behavior* only by the end of fully dpeloying this solution and that's the fact that while a user would not be prompted to login while they're creating short URLs (via custom domain), they would be prompted to login when they **visit** a short URL (if they've not already logged in to gmail on that browser).
+[[Investigating](https://stackoverflow.com/questions/58358716/web-app-asking-user-to-login-even-though-its-been-deployed-to-be-used-by-anyon)] I got to know about this *odd behavior* only by the end of fully dpeloying this solution and the scenario being while a user would not be prompted to login when they create short URLs (via custom domain), they would be prompted to login when they **visit** a shortened URL (if they've not already logged in to their Google accounts on that browser).
 
 These may be (and I'm not trying to be too hard on myself here) deal-breakers for a few and so I'd rather you know about them **before** you're exposed to the excruciating documentation 😅
 
