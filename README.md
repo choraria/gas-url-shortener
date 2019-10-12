@@ -101,6 +101,25 @@ The setup uses the following third party dependecies (notwithstanding the obviou
 
 # Usage
 
+Once you've everything setup, you can then navigate to your domain (in this case, https://tmt.pw/) and -
+
+1. Fill in the destination (long) URL that you'd want a user to land on
+2. Provide a slug (short notation) that would go right after your domain name (`https://example.com/`**slug**)
+3. Hit `Enter` or click **CREATE**
+
+![tmt-demo](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-demo.gif)
+
+## Validations
+
+The script within the `Code.gs` file checks for a few kinds of validations within different parts of the process.
+
+- It checks whether the "slug" contains anything other than texts and/or numbers
+- Keywords from the Banned list, as defined by the user
+   - I've gotten some examples from http://www.bannedwordlist.com/ that I've populated in my setup
+- If the slug (keyword) already exists
+
+## Glossary
+
 # Contributing
 
 # Credits
