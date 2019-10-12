@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base target="_top">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        function onSuccess1(data) {
+            var element = document.getElementById('customDomain');
+            element.innerHTML = data;
+        }
+        google.script.run.withSuccessHandler(onSuccess1).getCustomDomain();
+    </script>
+
+    <script>
+        function uploadData() {
+            var shortStack = {
+                longURL: $("#longURL").val(),
+                slug: $("#slug").val()
+            }
+            $("#create").attr("disabled", "disabled");
+            google.script.run.withSuccessHandler((id) => {
+
+                M.toast({
+                    html: id
+                });
+                $("#create").removeAttr("disabled");
+                if (id == 'Voila!') {
+
+                    google.script.run.withSuccessHandler(function(data) {
+                        var element = document.getElementById('result');
+                        element.innerHTML = '<h1 style="font-family: \'Bree Serif\', serif; color: #4CAF50; word-wrap: break-word;">' + data + $("#slug").val() + "</h1>";
+
+                    }).getCustomDomain();
+
+                }
+
+            }).addLink(shortStack);
+
+        }
+
+        function clearForm() {
+            $(document).ready(function() {
+                $("#urlShortener")[0].reset();
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row" align="center">
+            <div class="col s12">
+                <h1 style="font-family: 'Bree Serif', serif;"><u>T</u>ake <u>M</u>e <u>T</u>here</h1>
+                <h4 style="font-family: 'Open Sans', sans-serif;">URL Shortener powered by Google Apps Script</h4>
+            </div>
+        </div>
+
+        <div class="row" align="center" id='result'>
+            <h1><br /></h1>
+        </div>
+
+        <div class="row" align="center">
+            <form class="col s12" onsubmit="event.preventDefault(); uploadData();" id="urlShortener" name="urlShortener">
+
+                <div class="row col s12 m8 l6 offset-m2 offset-l3" align="center">
+                    <div class="input-field col s12">
+                        <input id="longURL" type="text" required />
+                        <label for="longURL">Long URL</label>
+                    </div>
+                </div>
+
+                <div class="row col s12 m8 l6 offset-m2 offset-l3" align="center">
+                    <div class="col s6">
+                        <h4 style="font-family: 'Bree Serif', serif; word-wrap: break-word" id='customDomain'></h4>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="slug" type="text" required />
+                        <label for="slug">Slug</label>
+                        <span class="helper-text" align='left'>Please use only texts &amp; numbers.</span>
+                    </div>
+                </div>
+
+                <div class="row col s12 m8 l6 offset-m2 offset-l3" align="center">
+
+                    <div class="input-field col s6 m4 l4 offset-m2 offset-l2">
+                        <button class="waves-effect btn blue" type="submit" id="create">Create</button>
+                    </div>
+
+                    <div class="input-field col s6 m4 l4">
+                        <button class="waves-effect btn red" type='button' onclick='event.preventDefault(); clearForm();' id='freshStart'>Clear</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
