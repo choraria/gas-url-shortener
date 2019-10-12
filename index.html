@@ -2,17 +2,6 @@
 <html>
 <head>
 	<title></title>
-	<style>
-		        .gas-frame {
-                border: none;
-                border-width: 0;
-                padding: 0;
-                margin: 0;
-                height: 100%;
-                width: 100%;
-        }
-
-	</style>
 	
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -45,10 +34,15 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-	
+	    <script>
+    var pathName = window.location.pathname;
+	var newURL = "https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec/" + pathName;
+	window.open(newURL,'_top');
+    </script>
+
 	
 </head>
 <body>
-	<iframe class="gas-frame" src="https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec"></iframe>
+	Hello, World!
 </body>
 </html>
