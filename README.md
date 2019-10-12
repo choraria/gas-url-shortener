@@ -46,7 +46,15 @@ Save the link somewhere as we'll need it in the later stages of this setup.
 
 ## The Github stage
 
-1. 
+1. [Create a new repository](https://github.com/new)
+   - Name it as you like
+   - Keep it **Public**
+   - (Optional) Check the **Initialize this repository with a README**
+   - Ignore the license and other aspects after the above
+   - Click **Create repository**
+2. Copy the `index.html` & `404.html` files from this repository to your own
+3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#The-Google-Sheets-&-Script-stage)
+   - Also edit the `<title>` tags from **line 5**
 
 # Dependencies
 
