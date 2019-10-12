@@ -36,8 +36,11 @@
     <!-- End Single Page Apps for GitHub Pages -->
 	    <script>
     var pathName = window.location.pathname;
+		    if (pathName == "/") {
+			} else {
 	var newURL = "https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec/" + pathName;
 	window.open(newURL,'_top');
+			}
     </script>
 
 	
