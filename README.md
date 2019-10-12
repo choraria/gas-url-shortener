@@ -32,7 +32,7 @@ Yeah, I know this may sound super annoying but *that*, something that most folks
 
 ### Google login
 
-[Investigating](https://stackoverflow.com/questions/58358716/web-app-asking-user-to-login-even-though-its-been-deployed-to-be-used-by-anyon) I got to know about this *odd behavior* only by the end of fully dpeloying this solution and that's the fact that while a user would not be prompted to login while they're creating short URLs (via custom domain), they would be prompted to login when they **visit** a short URL (if they've not already logged in to gmail on that browser).
+[[Investigating](https://stackoverflow.com/questions/58358716/web-app-asking-user-to-login-even-though-its-been-deployed-to-be-used-by-anyon)] I got to know about this *odd behavior* only by the end of fully dpeloying this solution and that's the fact that while a user would not be prompted to login while they're creating short URLs (via custom domain), they would be prompted to login when they **visit** a short URL (if they've not already logged in to gmail on that browser).
 
 These may be (and I'm not trying to be too hard on myself here) deal-breakers for a few and so I'd rather you know about them **before** you're exposed to the excruciating documentation 😅
 
@@ -57,6 +57,7 @@ These may be (and I'm not trying to be too hard on myself here) deal-breakers fo
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [Bucket list](#bucket-list)
+- [FAQs](#faqs)
 - [License](#license)
 
 # Prerequisites
@@ -178,6 +179,12 @@ This project would've not been possible (by me), had I not found my way through 
    - Login
    - Custom dashboard
    - Email notifications
+
+# FAQs
+
+> Does this service provide a 301/302 redirect?
+
+No. This setup simply uses `window.open` to have a new URL loaded on the same browser window (using `_top`), based on the slug
 
 # License
 
