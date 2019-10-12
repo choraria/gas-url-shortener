@@ -3,8 +3,9 @@ URL Shortener powered by Google Apps Script
 
 # Table of Contents
 
-# Installation
+# Demo & Usage
 
+# Installation
 
 # Usage
 
