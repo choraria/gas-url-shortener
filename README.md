@@ -1,7 +1,7 @@
 # TakeMeThere
 This tool is a [URL Shortening service](https://en.wikipedia.org/wiki/URL_shortening) powered by [Google Apps Script](https://developers.google.com/apps-script) and hosted using [Github Pages](https://pages.github.com/).
 
-Taking advantage of an [undocumented resource](https://stackoverflow.com/questions/58172084/grab-web-app-link-info-besides-querystring-parameters/58172160#58172160)\* from the `doGet` function that I accidentally stumbled upon - `e.pathInfo`.
+Taking advantage of an [undocumented resource](https://stackoverflow.com/questions/58172084/grab-web-app-link-info-besides-querystring-parameters/58172160#58172160)\* from the `doGet` function that I accidentally stumbled upon - `e.pathInfo` while working on a completely different project.
 
 *\*as on 13 Oct, 2019*
 
