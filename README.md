@@ -21,7 +21,7 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 
 The architecture...
 
-## The Google Sheets & Script stage
+## Google Sheets & Script stage
 
 1. Create a new [Spreadsheet](https://docs.google.com/spreadsheets/)
    - **DO NOT** add new sheets manually or rename the existing, default 'Sheet1' either; the script would automatically do that in the `setup` phase
@@ -44,7 +44,7 @@ The architecture...
 
 Save the link somewhere as we'll need it in the later stages of this setup.
 
-## The Github stage
+## Github stage
 
 1. [Create a new repository](https://github.com/new)
    - Name it as you like
@@ -53,7 +53,7 @@ Save the link somewhere as we'll need it in the later stages of this setup.
    - Ignore the license and other aspects after the above
    - Click **Create repository**
 2. Copy the `index.html` & `404.html` files from this repository to your own
-3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#the-google-sheets--script-stage)
+3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#google-sheets--script-stage)
    - Also edit the `<title>` tag from **line 5**
    - DO NOT make any changes to the `404.html` file
 4. Finally, go to **Settings > Options** (this is where you'd land by default)
