@@ -12,6 +12,9 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 
 # Installation
 
+1. Create a new [Spreadsheet](https://docs.google.com/spreadsheets/)
+2. 
+
 ## Dependencies
 
 # Usage
