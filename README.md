@@ -108,6 +108,7 @@ Once you've everything setup, you can then navigate to your domain (in this case
 3. Hit `Enter` or click **CREATE**
 
 ![tmt-demo](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-demo.gif)
+*open it in a new tab for better clarity / resolution*
 
 ## Validations
 
