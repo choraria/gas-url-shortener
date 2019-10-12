@@ -94,7 +94,7 @@ Wait for the DNS propogation to take place - can vary somewhere between 5 minute
 
 # Dependencies
 
-The setup uses the following third party dependecies (notwithstanding the obvious ones, those of which defined under [prerequisites](#prerequisites))
+The setup uses the following third party dependecies (notwithstanding the obvious ones, those of which have been defined under [prerequisites](#prerequisites))
 
 1. [Materialize CSS](https://materializecss.com)
 2. [Google fonts](https://fonts.google.com/specimen/Bree+Serif)
