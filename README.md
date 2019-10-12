@@ -14,7 +14,7 @@ With the current architecture, while "redirecting" from the short URL to the des
 
 ![tmt-caveat](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-caveat.gif)
 
-For now, the 404s are more of an "alert" box, that's the redirected to the main domain.
+For now, the 404s are more of an "alert" box, that's then redirected to the main domain.
 
 ![tmt-404](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-404.gif)
 
@@ -62,7 +62,7 @@ Save the link somewhere as we'll need it in the later stages of this setup.
    - Name it as you like
    - Keep it **Public**
    - (Optional) Check the **Initialize this repository with a README**
-   - Ignore the license and other aspects after the above
+   - Ignore the license and other aspects after the above options (you can set them up later)
    - Click **Create repository**
 2. Copy the `index.html` & `404.html` files from this repository to your own
 3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#google-sheets--script-stage)
