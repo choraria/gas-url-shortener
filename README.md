@@ -142,10 +142,10 @@ This project would've not been possible (by me), had I not found my way through 
 
 # Bucket list
 
-1. Analytics
+1. Analytics (P0)
    - Number of hits
    - URL Referrers
-2. User management
+2. User management (P1)
    - Login
    - Custom dashboard
    - Email notifications
