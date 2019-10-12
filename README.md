@@ -34,6 +34,20 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
 
 # Table of Contents
 
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [Google Sheets & Script stage](#google-sheets--script-stage)
+  - [Github stage](#github-stage)
+  - [Domain DNS stage](#domain-dns-stage)
+- [Dependencies](dependencies)
+- [Usage](#usage)
+  - [Validations](#validations)
+  - [Glossary](#glossary)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Bucket list](#bucket-list)
+- [License](#license)
+
 # Prerequisites
 
 1. Gmail or a G Suite account
