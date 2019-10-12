@@ -13,7 +13,7 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 # Prerequisites
 
 1. Gmail or a G Suite account
-2. Domain name with access to managing DNS
+2. A domain name with access its DNS management
    - will be required to setup Github Pages
 3. Github account (the free one would do too)
 
@@ -36,8 +36,17 @@ The architecture...
    - create a new sheet that would store/contain your slug and long URL tuple, along with the date on which it was created
    - create another sheet that would store a list of banned keywords that you could define, as required
    - delete the default 'Sheet1'
+7. Finally, go to **Publish > Deploy as web app...** and do the following:
+   - Choose **Project version:** as **New**
+   - Select **Execute the app as:** to **Me (your-email-id)**
+   - Most importantly, have the **Who has access to the app:** setup to **Anyone, even anonymous**
+   - Click **Deploy**
+
+Save the link somewhere as we'll need it in the later stages of this setup.
 
 ## The Github stage
+
+1. 
 
 # Dependencies
 
