@@ -71,7 +71,7 @@ Save the link somewhere as we'll need it in the later stages of this setup.
 2. Copy the `index.html` & `404.html` files from this repository to your own
 3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#google-sheets--script-stage)
    - Also edit the `<title>` tag from **line 5**
-   - DO NOT make any changes to the `404.html` file
+   - **DO NOT** make any changes to the `404.html` file
 4. Finally, go to **Settings > Options** (this is where you'd land by default)
    - scroll down to **GitHub Pages > Source**
    - select **master branch** from the drop down
@@ -92,11 +92,21 @@ Wait for the DNS propogation to take place - can vary somewhere between 5 minute
 
 # Dependencies
 
+The setup uses the following third party dependecies (notwithstanding the obvious ones, those of which defined under [prerequisites](#prerequisites))
+
+1. [Materialize CSS](https://materializecss.com)
+2. [Google fonts](https://fonts.google.com/specimen/Bree+Serif)
+
 # Usage
 
 # Contributing
 
 # Credits
+
+This project would've not been possible (by me), had I not stumbled upon the following resources:
+1. Jonathon Broughton's technique to use [Apps Script web apps within embeded ifames in Github Pages](https://github.com/stardotbmp/slack-gas-signup#github-pages)
+2. Rafael Pedicini's [Single Page Apps for GitHub Pages](https://github.com/rafrex/spa-github-pages)
+   - this was truly plug & play!
 
 # License
 
