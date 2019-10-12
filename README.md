@@ -30,6 +30,10 @@ For now, the 404s are more of an "alert" box, that's then redirected to the main
 
 Yeah, I know this may sound super annoying but *that*, something that most folks would call the holy grail for using URL shortening services, is still under my [bucket list](#bucket-list).
 
+### Google login
+
+[Investigating] I only got to know about this *odd behavior* only by the end of fully dpeloying this solution and that's the fact that while a user would not be propted to login while they're creating short URLs (via custom domain), they would be prompted to login when they visit a short URL (if they've not already logged in to gmail on that browser).
+
 These may be deal-breakers for a few and so I'd rather you know about them **before** you're exposed to the excruciating documentation 😅
 
 # Table of Contents
@@ -40,6 +44,7 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
     - [Redirects](#redirects)
     - [404s](#404s)
     - [Analytics](#analytics)
+    - [Google login](#google-login)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [Google Sheets & Script stage](#google-sheets--script-stage)
