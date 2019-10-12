@@ -26,6 +26,10 @@ For now, the 404s are more of an "alert" box, that's then redirected to the main
 
 ![tmt-404](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-404.gif)
 
+### Analytics
+
+Yeah, I know this may sound super annoying but *that*, something that most folks would call the holy grail for using URL shortening services, is still under my [bucket list](#bucket-list).
+
 These may be deal-breakers for a few and so I'd rather you know about them **before** you're exposed to the excruciating documentation 😅
 
 # Table of Contents
@@ -135,6 +139,16 @@ This project would've not been possible (by me), had I not found my way through 
 1. Jonathon Broughton's technique to use [Apps Script web apps within embeded ifames in Github Pages](https://github.com/stardotbmp/slack-gas-signup#github-pages)
 2. Rafael Pedicini's [Single Page Apps for GitHub Pages](https://github.com/rafrex/spa-github-pages)
    - this was truly plug & play!
+
+# Bucket list
+
+1. Analytics
+   - Number of hits
+   - URL Referrers
+2. User management
+   - Login
+   - Custom dashboard
+   - Email notifications
 
 # License
 
