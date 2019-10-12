@@ -104,7 +104,7 @@ The setup uses the following third party dependecies (notwithstanding the obviou
 Once you've everything setup, you can then navigate to your domain (in this case, https://tmt.pw/) and -
 
 1. Fill in the destination (long) URL that you'd want a user to land on
-2. Provide a slug (short notation) that would go right after your domain name (`https://example.com/`**slug**)
+2. Provide a slug (short notation) that would go right after your domain name
 3. Hit `Enter` or click **CREATE**
 
 ![tmt-demo](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-demo.gif)
@@ -114,13 +114,18 @@ Once you've everything setup, you can then navigate to your domain (in this case
 The script within the `Code.gs` file checks for a few kinds of validations within different parts of the process.
 
 - It checks whether the "slug" contains anything other than texts and/or numbers
-- Keywords from the Banned list, as defined by the user
-   - I've gotten some examples from http://www.bannedwordlist.com/ that I've populated in my setup
-- If the slug (keyword) already exists
+- Restricts the use of keywords from the Banned list, as defined by the user
+   - I've gotten some examples from http://www.bannedwordlist.com/ that I've populated in [my setup](https://docs.google.com/spreadsheets/d/1xPs4Ht-3PVBGgdNSxyN3p2F5TtOifgvunrEvYaiu_A4/edit#gid=360346341)
+- Disallowes link creation if the slug (keyword) already exists
 
 ## Glossary
 
+- slug = the path of the URL just comes right after the TLD of a domain (`https://example.com/`**slug**)
+- long URL = destination URL (where you'd want the users to be redirected should they visit the short URL)
+
 # Contributing
+
+Please feel free to create pull requests with your recommendations or write to me on `code@script.gs`
 
 # Credits
 
