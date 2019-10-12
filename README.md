@@ -26,7 +26,6 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 3. In the **Code.gs** file, replace the `sheetID` with the Spreadsheet ID that you could find from the URL of your newly created sheet in step 1
    - referring to the `https://docs.google.com/spreadsheets/d/`**RandomStringOfCharactersHere**`/edit`
 4. Right below the `sheetID`, also add the `customDomain` & `serviceName`, as desired
-   - 
 
 ## Dependencies
 
