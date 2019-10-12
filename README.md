@@ -57,8 +57,8 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
 # Prerequisites
 
 1. Gmail or a G Suite account
-2. A domain name with access its DNS management
-   - will be required to setup Github Pages
+2. A domain name with access to its DNS management
+   - we'll need it to setup Github Pages later
 3. Github account (the free one would do too)
 
 # Installation
@@ -66,15 +66,15 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
 ## Google Sheets & Script stage
 
 1. Create a new [Spreadsheet](https://docs.google.com/spreadsheets/)
-   - **DO NOT** add new sheets manually or rename the existing, default 'Sheet1' either; the script would automatically do that in the `setup` phase
-2. Make a copy of [my script](https://script.google.com/d/1wdNu632PfJNv0iCCNLjA-9nARemz7DLcK28Lio6YdVNMP3iEtOUtR4_R/edit?usp=sharing) **OR** Create a new [Google Apps Script](https://script.google.com/home/start) and then copy > paste all the code that's available in [apps-script](apps-script/)
-   - in case you do not know how to create a fresh Apps Script seperately (i.e. without going through to **Tools > Script Editor**), refer [this](https://script.gs/disassociate-scripts-from-sheets-and-other-tools/)
+   - **DO NOT** add new sheets manually or rename the existing (default) 'Sheet1' either; the script would automatically do that in the `setup` phase
+2. Make a copy of [my script](https://script.google.com/d/1wdNu632PfJNv0iCCNLjA-9nARemz7DLcK28Lio6YdVNMP3iEtOUtR4_R/edit?usp=sharing) **OR** Create a new [Google Apps Script](https://script.google.com/home/start) and then copy > paste all the code that's available in [apps-script](apps-script/) within their respective files
+   - in case you do not know how to create a fresh Apps Script seperately (i.e. without going through to **Tools > Script Editor**), refer [this article](https://script.gs/disassociate-scripts-from-sheets-and-other-tools/)
 3. In the **Code.gs** file, replace the `sheetID` with the Spreadsheet ID that you could find from the URL of your newly created sheet in step 1
    - referring to the `https://docs.google.com/spreadsheets/d/`**RandomStringOfCharactersHere**`/edit`
-4. Right below the `sheetID`, also add your domain name under `customDomain` & a name that you'd want to display under `serviceName`
+4. Right below the `sheetID`, fill in your domain name under `customDomain` & a name that you'd want to display under `serviceName`
    - Note: You **DO NOT** need to purchase a seperate SSL certificate as `https` will be enforced in the coming stages, when we start working with Github Pages
-5. Save the script - **DO NOT** deploy as webapp or run any function at this stage. Simply save the script and it might prompt you for a file name, if that has not already been setup
-6. Navigate to the `Setup.gs` script file within apps script and run the `setup` function. Here, it would ask you to authorise the script - **do it**! This would do 3 things:
+5. Save the script - **DO NOT** deploy as webapp or run any function at this stage. Simply save the script and if it prompts you for a file name, if it did not already, then provide a name and let the script save
+6. Navigate to the `Setup.gs` script file within apps script and run the `setup` function. Here, it would ask you to authorise the script - **do it**! The function would do 3 things:
    - create a new sheet that would store/contain your slug and long URL tuple, along with the date on which it was created
    - create another sheet that would store a list of banned keywords that you could define, as required
    - delete the default 'Sheet1'
@@ -97,8 +97,8 @@ Save the link somewhere as we'll need it in the later stages of this setup.
 2. Copy the `index.html` & `404.html` files from this repository to your own
 3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#google-sheets--script-stage)
    - Also edit the `<title>` tag from **line 5**
-   - **DO NOT** make any changes to the `404.html` file
-4. Finally, go to **Settings > Options** (this is where you'd land by default)
+   - **DO NOT** make any changes to the `404.html` file (courtesy [Rafael Pedicini](#credits))
+4. Finally, go to **Settings > Options** (this is where you'd land by default when you click "Settings")
    - scroll down to **GitHub Pages > Source**
    - select **master branch** from the drop down
    - enter your domain name under **Custom domain** and hit "save"
@@ -125,14 +125,16 @@ The setup uses the following third party dependecies (notwithstanding the obviou
 
 # Usage
 
-Once you've everything setup, you can then navigate to your domain (in this case, https://tmt.pw/) and -
+Once you have everything setup, you can then navigate to your domain (in this case, https://tmt.pw/) and -
 
 1. Fill in the destination (long) URL that you'd want a user to land on
 2. Provide a slug (short notation) that would go right after your domain name
 3. Hit `Enter` or click **CREATE**
 
 ![tmt-demo](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-demo.gif)
-*open it in a new tab for better clarity / resolution*
+*open this image in a new tab for better clarity / resolution*
+
+You can also clear the fields by clicking on the (Red) 'CLEAR' button. It has currently not been automated (intentionally) as the final display (that comes up in Green) consumes the slug from this form.
 
 ## Validations
 
