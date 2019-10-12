@@ -40,7 +40,6 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
     - [Redirects](#redirects)
     - [404s](#404s)
     - [Analytics](#analytics)
-
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [Google Sheets & Script stage](#google-sheets--script-stage)
