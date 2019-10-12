@@ -15,12 +15,16 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 1. Gmail or a G Suite account
 2. Domain name with access to managing DNS
    - will be required to setup Github Pages
-3. 
+3. Github account (the free one would do too)
 
 # Installation
 
+The architecture...
+
+## The Google Sheets & Script stage
+
 1. Create a new [Spreadsheet](https://docs.google.com/spreadsheets/)
-   - **DO NOT** add new sheets manually or rename the existing, default "*Sheet1*" either; the script would automatically do that in the `setup` phase
+   - **DO NOT** add new sheets manually or rename the existing, default 'Sheet1' either; the script would automatically do that in the `setup` phase
 2. Make a copy of [my script](https://script.google.com/d/1wdNu632PfJNv0iCCNLjA-9nARemz7DLcK28Lio6YdVNMP3iEtOUtR4_R/edit?usp=sharing) **OR** Create a new [Google Apps Script](https://script.google.com/home/start) and then copy > paste all the code that's available in [apps-script](apps-script/)
    - in case you do not know how to create a fresh Apps Script seperately (i.e. without going through to **Tools > Script Editor**), refer [this](https://script.gs/disassociate-scripts-from-sheets-and-other-tools/)
 3. In the **Code.gs** file, replace the `sheetID` with the Spreadsheet ID that you could find from the URL of your newly created sheet in step 1
@@ -30,11 +34,12 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 5. Save the script - **DO NOT** deploy as webapp or run any function at this stage. Simply save the script and it might prompt you for a file name, if that has not already been setup
 6. Navigate to the `Setup.gs` script file within apps script and run the `setup` function. Here, it would ask you to authorise the script - **do it**! This would do 3 things:
    - create a new sheet that would store/contain your slug and long URL tuple, along with the date on which it was created
-   - create another sheet with a list of banned keywords that you could define/store, as required
-   - delete the default *Sheet1*
-7. 
+   - create another sheet that would store a list of banned keywords that you could define, as required
+   - delete the default 'Sheet1'
 
-## Dependencies
+## The Github stage
+
+# Dependencies
 
 # Usage
 
