@@ -182,9 +182,9 @@ This project would've not been possible (by me), had I not found my way through 
 
 # FAQs
 
-> Does this service provide a 301/302 redirect?
+### Does this service provide a 301/302 redirect?
 
-No. This setup simply uses `window.open` to have a new URL loaded on the same browser window (using `_top`), based on the slug
+No. This setup simply uses `window.open` to have a new URL loaded on the same browser window (using `_top`), based on the slug.
 
 # License
 

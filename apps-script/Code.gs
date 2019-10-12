@@ -43,13 +43,13 @@ function getRedirects() {
   var range = activeSheet.getRange(2,1, lastRow-1, lastColumn);
   var data = range.getValues();
   for (var i=0; i<lastRow-1; i++) {
-    var dataJSON = redirectsJSON_(data[i]);
+    var dataJSON = redirectsJSON(data[i]);
     redirects.push(dataJSON);
   }
   return redirects;
 }
 
-function redirectsJSON_(row) {
+function redirectsJSON(row) {
   return {
     "slug": row[0],
     "longURL": row[1]
