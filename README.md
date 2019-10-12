@@ -1,6 +1,8 @@
 # TakeMeThere
 This tool is a [URL Shortening service](https://en.wikipedia.org/wiki/URL_shortening) powered by [Google Apps Script](https://developers.google.com/apps-script) and hosted using [Github Pages](https://pages.github.com/).
 
+Taking advantage from an [undocumented resource](https://stackoverflow.com/questions/58172084/grab-web-app-link-info-besides-querystring-parameters/58172160#58172160) of the `doGet` function that I accidentally stumbled upon - `e.pathInfo`.
+
 ## Demo
 
 You can try **TakeMeThere** on https://tmt.pw/ and access the original resources here -
@@ -34,8 +36,6 @@ These may be deal-breakers for a few and so I'd rather you know about them **bef
 3. Github account (the free one would do too)
 
 # Installation
-
-The architecture...
 
 ## Google Sheets & Script stage
 
@@ -103,7 +103,8 @@ The setup uses the following third party dependecies (notwithstanding the obviou
 
 # Credits
 
-This project would've not been possible (by me), had I not stumbled upon the following resources:
+This project would've not been possible (by me), had I not found my way through to the following resources -
+
 1. Jonathon Broughton's technique to use [Apps Script web apps within embeded ifames in Github Pages](https://github.com/stardotbmp/slack-gas-signup#github-pages)
 2. Rafael Pedicini's [Single Page Apps for GitHub Pages](https://github.com/rafrex/spa-github-pages)
    - this was truly plug & play!
