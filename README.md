@@ -10,9 +10,13 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 
 ## Caveat(s)
 
+### Redirects
+
 With the current architecture, while "redirecting" from the short URL to the destination (long) URL, the Apps Script web app link is exposed and visible. Here's what I mean -
 
 ![tmt-caveat](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-caveat.gif)
+
+### 404s
 
 For now, the 404s are more of an "alert" box, that's then redirected to the main domain.
 
@@ -73,6 +77,19 @@ Save the link somewhere as we'll need it in the later stages of this setup.
    - select **master branch** from the drop down
    - enter your domain name under **Custom domain** and hit "save"
 
+## Domain DNS stage
+
+Please follow through what's available with [configuring an apex domain](https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). My approach was to create A records that point to the following IP addresses for GitHub Pages -
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+Wait for the DNS propogation to take place - can vary somewhere between 5 minutes to 78 hours (or more).
+
 # Dependencies
 
 # Usage
@@ -82,3 +99,13 @@ Save the link somewhere as we'll need it in the later stages of this setup.
 # Credits
 
 # License
+
+MIT License
+
+Copyright (c) 2019 Sourabh Choraria
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
