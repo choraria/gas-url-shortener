@@ -53,8 +53,13 @@ Save the link somewhere as we'll need it in the later stages of this setup.
    - Ignore the license and other aspects after the above
    - Click **Create repository**
 2. Copy the `index.html` & `404.html` files from this repository to your own
-3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#The-Google-Sheets-&-Script-stage)
-   - Also edit the `<title>` tags from **line 5**
+3. Edit the `index.html` file from your respository and replace the links (from **lines 41 & 70**) that contain a `script.google.com` URL to the one (your own) that you'd have saved from [the previous stage](#the-google-sheets--script-stage)
+   - Also edit the `<title>` tag from **line 5**
+   - DO NOT make any changes to the `404.html` file
+4. Finally, go to **Settings > Options** (this is where you'd land by default)
+   - scroll down to **GitHub Pages > Source**
+   - select **master branch** from the drop down
+   - enter your domain name under **Custom domain** and hit "save"
 
 # Dependencies
 
