@@ -1,2 +1,2 @@
-# gas-iframe
-Testing Apps Script Web App inside an HTML iframe
+# Take Me There
+URL Shortener powered by Google Apps Script
