@@ -176,6 +176,9 @@ This project would've not been possible (by me), had I not found my way through 
    - Login
    - Custom dashboard
    - Email notifications
+3. API (P2)
+   - `doPost` to create new short URLs
+   - Fetch, update & delete existing URLs
 
 # FAQs
 
