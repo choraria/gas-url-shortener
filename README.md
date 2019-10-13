@@ -51,7 +51,7 @@ These may be (and I'm not trying to be too hard on myself here) deal-breakers fo
 - [Credits](#credits)
 - [Bucket list](#bucket-list)
 - [FAQs](#faqs)
-- [Learning](#learning)
+- [Learnings](#learnings)
   - [Google login](#google-login)
 - [License](#license)
 
@@ -164,6 +164,8 @@ This project would've not been possible (by me), had I not found my way through 
 1. Jonathon Broughton's technique to use [Apps Script web apps within embeded ifames in Github Pages](https://github.com/stardotbmp/slack-gas-signup#github-pages)
 2. Rafael Pedicini's [Single Page Apps for GitHub Pages](https://github.com/rafrex/spa-github-pages)
    - this was truly plug & play!
+3. [Jasper Duizendstra](https://www.linkedin.com/in/duizendstra/) for helping me figure my way around `e.pathInfo`
+   - refer Learnings > [Google login](#google-login)
 
 # Bucket list
 
@@ -174,6 +176,9 @@ This project would've not been possible (by me), had I not found my way through 
    - Login
    - Custom dashboard
    - Email notifications
+3. API (P2)
+   - `doPost` to create new short URLs
+   - Fetch, update & delete existing URLs
 
 # FAQs
 
@@ -181,7 +186,7 @@ This project would've not been possible (by me), had I not found my way through 
 
 No. This setup simply uses `window.open` to have a new URL loaded on the same browser window (using `_top`), based on the slug.
 
-# Learning
+# Learnings
 
 ## Google login
 
