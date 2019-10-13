@@ -38,7 +38,8 @@
     <script>
         var pathName = window.location.pathname;
         if (pathName == "/") {} else {
-            var newURL = "https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec" + pathName;
+            pathInfo = pathName.replace("/","");
+            var newURL = "https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec?" + pathInfo;
             window.open(newURL, '_top');
         }
     </script>
