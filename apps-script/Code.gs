@@ -9,8 +9,8 @@ var bannedKeywords = 'Exclusions';
 var ss = SpreadsheetApp.openById(sheetID);
 
 function doGet(e) {
-  var slug = e.pathInfo;
-  if (slug == undefined) {
+  var slug = e.queryString;
+  if (slug == '') {
     var title = 'Dashboard | ' + serviceName;
     return HtmlService.createHtmlOutputFromFile('Dashboard').setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL).setTitle(title);
   } else {
