@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/schoraria911/gas-url-shortener)
+![GitHub](https://img.shields.io/github/license/schoraria911/gas-url-shortener) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783618162-c6afcee4f4657cd7e88007d1)
 
 # TakeMeThere
 This tool is a [URL Shortening service](https://en.wikipedia.org/wiki/URL_shortening) powered by [Google Apps Script](https://developers.google.com/apps-script) and hosted using [Github Pages](https://pages.github.com/).
