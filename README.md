@@ -58,6 +58,7 @@ These may be (and I'm not trying to be too hard on myself here) deal-breakers fo
 - [FAQs](#faqs)
 - [Learnings](#learnings)
   - [Google login](#google-login)
+- [Changelog](#changelog)
 - [License](#license)
 
 # Prerequisites
