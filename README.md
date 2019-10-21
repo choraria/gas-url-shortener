@@ -58,6 +58,7 @@ These may be (and I'm not trying to be too hard on myself here) deal-breakers fo
 - [FAQs](#faqs)
 - [Learnings](#learnings)
   - [Google login](#google-login)
+- [Changelog](#changelog)
 - [License](#license)
 
 # Prerequisites
@@ -198,6 +199,10 @@ No. This setup simply uses `window.open` to have a new URL loaded on the same br
 > Turns out `e.pathInfo` was a bad idea! Switched my code back to `e.queryString`.
 
 [[Resolved](https://stackoverflow.com/questions/58358716/web-app-asking-user-to-login-even-though-its-been-deployed-to-be-used-by-anyon)] I got to know about this *odd behavior* only by the end of fully dpeloying this solution and the scenario being while a user would not be prompted to login when they create short URLs (via custom domain), they would be prompted to login when they **visit** a shortened URL (if they've not already logged in to their Google accounts on that browser).
+
+# Changelog
+
+A simple view of all things that have been changed can be tracked [here](https://github.com/schoraria911/gas-url-shortener/wiki/Changelog)
 
 # License
 
