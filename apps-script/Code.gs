@@ -85,7 +85,17 @@ function addLink(shortStack) {
       return "Sorry! '" + slug + "' has already been taken.";
     }
   }
-  var longURL = shortStack.longURL;  
+  var longURL = shortStack.longURL;
+  
+  var urlRegex = /https?:\/\/.?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b[-a-zA-Z0-9@:%_\+.~#?&=]*/g;
+  // Problem: https://github.com/schoraria911/gas-url-shortener/issues/19
+  // Solution: https://stackoverflow.com/questions/30970068/js-regex-url-validation
+  if (urlRegex.test(longURL)) {
+    // continue
+  } else {
+    return 'Please enter a valid URL.';
+  }
+    
   var sheetName = redirectSheet;
   var activeSheet = ss.getSheetByName(sheetName);
   if (activeSheet !== null) {
