@@ -28,7 +28,7 @@
             } else {
                 try {
                     navigator.clipboard.writeText(lastURL);
-	            } catch (_) {
+	        } catch (_) {
                     let area = document.createElement("textarea");
                     area.value = lastURL;
                     document.body.appendChild(area);
