@@ -21,6 +21,24 @@
     </script>
 
     <script>
+        var lastURL = null;
+        function clip(){
+            if(lastURL == null){
+                window.top.location.href = "https://xkcd.com/2200"
+            } else {
+                try {
+                    navigator.clipboard.writeText(lastURL);
+	            } catch (_) {
+                    let area = document.createElement("textarea");
+                    area.value = lastURL;
+                    document.body.appendChild(area);
+                    area.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(area)
+                }
+            }
+        }
+        
         function uploadData() {
             var shortStack = {
                 longURL: $("#longURL").val(),
@@ -37,14 +55,13 @@
 
                     google.script.run.withSuccessHandler(function(data) {
                         var element = document.getElementById('result');
-                        element.innerHTML = '<h1 style="font-family: \'Bree Serif\', serif; color: #4CAF50; word-wrap: break-word;">' + data + $("#slug").val() + "</h1>";
-
+                        lastURL = data + $("#slug").val();
+                        element.innerHTML = (lastURL + '<button onclick="clip()">copy</button>');
                     }).getCustomDomain();
 
                 }
 
             }).addLink(shortStack);
-
         }
 
         function clearForm() {
@@ -66,8 +83,8 @@
             </div>
         </div>
 
-        <div class="row" align="center" id='result'>
-            <h1><br /></h1>
+        <div class="row" align="center">
+            <h1 id="result" style="font-family: 'Bree Serif', serif; color: #4CAF50; word-wrap: break-word;"><br/></h1>
         </div>
 
         <div class="row" align="center">
