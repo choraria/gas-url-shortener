@@ -76,6 +76,21 @@
 
 <body>
     <iframe class="gas-frame" src="https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec"></iframe>
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    // Optionally log to console "Service Worker found no need to register."
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        // Optionally log to console "Service worker registered."
+      });
+  }
+}
 </body>
 
 </html>
