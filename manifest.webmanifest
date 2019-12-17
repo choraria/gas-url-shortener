@@ -1,0 +1,91 @@
+{
+	"name" : "Take Me There",
+	"short_name" : "Take Me There",
+	"icons" : [
+		{
+			"src": "/imgs/favicon/44x44.png",
+			"sizes": "44x44"
+		},
+		{
+			"src": "/imgs/favicon/48x48.png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "/imgs/favicon/1240x600.png",
+			"sizes": "1240x600"
+		},
+		{
+			"src": "/imgs/favicon/300x300.png",
+			"sizes": "300x300"
+		},
+		{
+			"src": "/imgs/favicon/150x150.png",
+			"sizes": "150x150"
+		},
+		{
+			"src": "/imgs/favicon/88x88.png",
+			"sizes": "88x88"
+		},
+		{
+			"src": "/imgs/favicon/24x24.png",
+			"sizes": "24x24"
+		},
+		{
+			"src": "/imgs/favicon/50x50.png",
+			"sizes": "50x50"
+		},
+		{
+			"src": "/imgs/favicon/620x300.png",
+			"sizes": "620x300"
+		},
+		{
+			"src": "/imgs/favicon/192x192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/imgs/favicon/144x144.png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/imgs/favicon/96x96.png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/imgs/favicon/72x72.png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "/imgs/favicon/36x36.png",
+			"sizes": "36x36"
+		},
+		{
+			"src": "/imgs/favicon/1024x1024.png",
+			"sizes": "1024x1024"
+		},
+		{
+			"src": "/imgs/favicon/180x180.png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "/imgs/favicon/152x152.png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "/imgs/favicon/120x120.png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "/imgs/favicon/76x76.png",
+			"sizes": "76x76"
+		}],
+	"theme_color" : "#ffffff",
+	"background_color" : "#ffffff",
+	"display" : "standalone",
+	"start_url" : "https://tmt.pw/",
+	"lang" : "English",
+	"screenshots" : [],
+	"description" : "URL Shortener powered by Google Apps Script",
+	"orientation" : "portrait",
+	"scope" : "/",
+	"generated" : "undefined"
+}
