@@ -76,7 +76,8 @@
 
 <body>
     <iframe class="gas-frame" src="https://script.google.com/macros/s/AKfycbyayXeY_LGm7sy-J1VGvg7wfqOZYonZmKphS0F4Qz4jLZ336qsR/exec"></iframe>
-// Check compatibility for the browser we're running this in
+<script>
+    // Check compatibility for the browser we're running this in
 if ("serviceWorker" in navigator) {
   if (navigator.serviceWorker.controller) {
     // Optionally log to console "Service Worker found no need to register."
@@ -91,6 +92,7 @@ if ("serviceWorker" in navigator) {
       });
   }
 }
+    </script>
 </body>
 
 </html>
