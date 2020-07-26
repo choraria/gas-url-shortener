@@ -21,7 +21,6 @@
     </script>
 
     <script>
-
         function uploadData() {
             var shortStack = {
                 longURL: $("#longURL").val(),
@@ -51,16 +50,20 @@
 
         }
 
-        function copyResult() {
-        var element = document.getElementById("result");
-
-        /* Select the text field */
-        element.innerText.select();
-        element.setSelectionRange(0, 99999);
-
-        element.execCommand("copy");
-
-        alert("Copied the text: " + copyText.value);
+        function copyResultPls() {
+            var text = document.getElementById('result');    
+            if (document.body.createTextRange) {
+                var range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                var selection = window.getSelection();
+                var range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            document.execCommand('copy');
         }
 
         function clearForm() {
@@ -87,7 +90,7 @@
         </div>
 
         <div class="row" align="center">
-            <button class="copy_button" type='button' style='display: none;' onclick='copyResult();' id='copyButton'>Copy</button>
+            <button class="copy_button" type='button' style='display: none' onclick="copyResultPls()" id='copyButton'>Copy</button>
         </div>
 
         <div class="row" align="center">
