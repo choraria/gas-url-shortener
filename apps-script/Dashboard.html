@@ -21,6 +21,7 @@
     </script>
 
     <script>
+
         function uploadData() {
             var shortStack = {
                 longURL: $("#longURL").val(),
@@ -39,12 +40,27 @@
                         var element = document.getElementById('result');
                         element.innerHTML = '<h1 style="font-family: \'Bree Serif\', serif; color: #4CAF50; word-wrap: break-word;">' + data + $("#slug").val() + "</h1>";
 
+                        var button = document.getElementById("copyButton");
+                        button.style.display = "block";
+
                     }).getCustomDomain();
 
                 }
 
             }).addLink(shortStack);
 
+        }
+
+        function copyResult() {
+        var element = document.getElementById("result");
+
+        /* Select the text field */
+        element.innerText.select();
+        element.setSelectionRange(0, 99999);
+
+        element.execCommand("copy");
+
+        alert("Copied the text: " + copyText.value);
         }
 
         function clearForm() {
@@ -68,6 +84,10 @@
 
         <div class="row" align="center" id='result'>
             <h1><br /></h1>
+        </div>
+
+        <div class="row" align="center">
+            <button class="copy_button" type='button' style='display: none;' onclick='copyResult();' id='copyButton'>Copy</button>
         </div>
 
         <div class="row" align="center">
