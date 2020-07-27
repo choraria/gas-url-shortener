@@ -50,7 +50,7 @@
 
         }
 
-        function copyResultPls() {
+        function copyResult() {
             var text = document.getElementById('result');    
             if (document.body.createTextRange) {
                 var range = document.body.createTextRange();
@@ -64,6 +64,12 @@
                 selection.addRange(range);
             }
             document.execCommand('copy');
+
+            if (window.getSelection) {window.getSelection().removeAllRanges();}
+            else if (document.selection) {document.selection.empty();}
+
+            var button = document.getElementById('copyButton');
+            button.innerText = "Copied!";
         }
 
         function clearForm() {
@@ -90,7 +96,7 @@
         </div>
 
         <div class="row" align="center">
-            <button class="copy_button" type='button' style='display: none' onclick="copyResultPls()" id='copyButton'>Copy</button>
+            <button class="waves-effect btn green" type='button' style='display: none' onclick="copyResult()" id='copyButton'>Copy</button>
         </div>
 
         <div class="row" align="center">
