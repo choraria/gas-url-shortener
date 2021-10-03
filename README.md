@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/schoraria911/gas-url-shortener) ![GitHub issues](https://img.shields.io/github/issues-raw/schoraria911/gas-url-shortener) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783618162-c6afcee4f4657cd7e88007d1) ![Twitter Follow](https://img.shields.io/twitter/follow/schoraria911?label=Follow&style=social)
+![GitHub](https://img.shields.io/github/license/choraria/gas-url-shortener) ![GitHub issues](https://img.shields.io/github/issues-raw/choraria/gas-url-shortener) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783618162-c6afcee4f4657cd7e88007d1) ![Twitter Follow](https://img.shields.io/twitter/follow/schoraria911?label=Follow&style=social)
 
 <a href="https://www.producthunt.com/posts/take-me-there-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-take-me-there-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=170935&theme=dark" alt="Take Me There - URL Shortener powered by Google Apps Script | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
 
@@ -21,13 +21,13 @@ You can try **TakeMeThere** on https://tmt.pw/ and access the original resources
 
 With the current architecture, while "redirecting" from the short URL to the destination (long) URL, the Apps Script web app link is exposed and visible. Here's what I mean -
 
-![tmt-caveat](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-caveat.gif)
+![tmt-caveat](https://raw.githubusercontent.com/choraria/gas-url-shortener/staging/imgs/tmt-caveat.gif)
 
 ### 404s
 
 For now, the 404s are more of an "alert" box, that's then redirected to the main domain.
 
-![tmt-404](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-404.gif)
+![tmt-404](https://raw.githubusercontent.com/choraria/gas-url-shortener/staging/imgs/tmt-404.gif)
 
 ### Analytics
 
@@ -138,7 +138,7 @@ Once you have everything setup, you can then navigate to your domain (in this ca
 2. Provide a slug (short notation) that would go right after your domain name
 3. Hit `Enter` or click **CREATE**
 
-![tmt-demo](https://raw.githubusercontent.com/schoraria911/gas-url-shortener/staging/imgs/tmt-demo.gif)
+![tmt-demo](https://raw.githubusercontent.com/choraria/gas-url-shortener/staging/imgs/tmt-demo.gif)
 *open this image in a new tab for better clarity / resolution*
 
 You can also clear the fields by clicking on the (Red) 'CLEAR' button. It has currently not been automated (intentionally) as the final display (that comes up in Green) consumes the slug from this form.
@@ -202,7 +202,7 @@ No. This setup simply uses `window.open` to have a new URL loaded on the same br
 
 # Changelog
 
-A simple view of all things that have been changed can be tracked [here](https://github.com/schoraria911/gas-url-shortener/wiki/Changelog)
+A simple view of all things that have been changed can be tracked [here](https://github.com/choraria/gas-url-shortener/wiki/Changelog)
 
 # License
 
