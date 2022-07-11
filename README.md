@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/choraria/gas-url-shortener) ![GitHub issues](https://img.shields.io/github/issues-raw/choraria/gas-url-shortener) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783618162-c6afcee4f4657cd7e88007d1) ![Twitter Follow](https://img.shields.io/twitter/follow/schoraria911?label=Follow&style=social)
+![GitHub](https://img.shields.io/github/license/choraria/gas-url-shortener) ![GitHub issues](https://img.shields.io/github/issues-raw/choraria/gas-url-shortener) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783618162-c6afcee4f4657cd7e88007d1) ![Twitter Follow](https://img.shields.io/twitter/follow/choraria?label=Follow&style=social)
 
 <a href="https://www.producthunt.com/posts/take-me-there-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-take-me-there-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=170935&theme=dark" alt="Take Me There - URL Shortener powered by Google Apps Script | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
 
